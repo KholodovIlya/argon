@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-md-8 offset-md-2 mt-2">
+        <div class="card bg-dark text-white mt-2" style="border-radius: 1rem" *ngFor="let game of gamesList | async">
+            <div class="card-body p-2 text-center">
+                <div>
+                    <h5>{{game.name}}</h5>
+                    <p>{{game.description}}</p>
+                    <a class="btn btn-outline-primary" href={{game.link}}>
+                        Играть
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

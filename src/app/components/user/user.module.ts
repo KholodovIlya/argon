@@ -7,6 +7,7 @@ import { ContactsComponent } from './components/contacts/contacts.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
+import { GamesComponent } from './components/games/games.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { UserDashboardComponent } from './components/user-dashboard/user-dashboa
     ContactsComponent,
     FooterComponent,
     HeaderComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    GamesComponent
   ],
   imports: [
     CommonModule,

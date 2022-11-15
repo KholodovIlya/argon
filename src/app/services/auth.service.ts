@@ -25,6 +25,9 @@ export class AuthService {
         } else if((userInfo.email === "svppvs2006@mail.ru" && userInfo.password === "Tumba1234")) {
             this.setToken('свят')
             return of(true)
+        } else if((userInfo.email === "nikita@mail.ru" && userInfo.password === "client777")) {
+            this.setToken('никита')
+            return of(true)
         }
         return throwError(() => new Error('Failed Login'))
     }
