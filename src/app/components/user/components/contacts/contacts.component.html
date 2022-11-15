@@ -1,1 +1,17 @@
-<p>Контакты</p>
+<div class="col-4 mx-2 mt-2">
+    <div
+      class="card bg-dark text-white mt-2"
+      style="border-radius: 1rem"
+      *ngFor="let person of personalList | async"
+    >
+      <div class="card-body p-2 text-center">
+        <div>
+          <h5>{{person.name}}</h5>
+          <p>{{person.description}}</p>
+            <a class="btn btn-success" href={{person.link}} target="_blank">
+            Написать
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
